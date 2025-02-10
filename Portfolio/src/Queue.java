@@ -20,7 +20,7 @@ public class Queue {
         Person pivot = arr.get(high);
         int i = (low - 1);
         for (int j = low; j < high; j++) {
-            if (arr.get(j).getAge() <= pivot.getAge()) {
+            if (arr.get(j).getAge() >= pivot.getAge()) {
                 i++;
 
                 Person temp = arr.get(i);
@@ -40,7 +40,7 @@ public class Queue {
         Person pivot = arr.get(high);
         int i = (low - 1);
         for (int j = low; j < high; j++) {
-            if (arr.get(j).getLastName().compareTo(pivot.getLastName()) <= 0) {
+            if (arr.get(j).getLastName().compareTo(pivot.getLastName()) >= 0) {
                 i++;
 
                 Person temp = arr.get(high);
